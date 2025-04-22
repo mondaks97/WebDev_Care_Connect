@@ -69,7 +69,7 @@ const doctor = Doctors.find((doc) => doc.name === appointment?.primaryPhysician)
         </section>
 
         <Button variant="outline" className='shad-primary-btn' asChild>
-            <Link href={`/patients/${userId}/new-appointment`}>
+            <Link href={'/'}>
               New Appointment
             </Link>
         </Button>

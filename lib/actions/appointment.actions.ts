@@ -97,8 +97,8 @@ export const updateAppointment = async ({ appointmentId, userId, appointment, ty
     const smsMessage = `
     Hello this is Care Connect.  
     ${type === 'schedule'
-        ? `naka schedule kana para kay ${formatDateTime(appointment.schedule!).dateTime} with Dr. ${appointment.primaryPhysician}.`
-        : `yung appointment mo ay kinansela. rason: ${appointment.cancellationReason}`
+        ? `naka schedule kana kaya pumunta ka ng ${formatDateTime(appointment.schedule!).dateTime} ang iyong doctor ay si Dr. ${appointment.primaryPhysician}.`
+        : `ang appointment mo ay kinansela. rason: ${appointment.cancellationReason}`
       }`
 
       await sendSmsNotification(userId, smsMessage);
